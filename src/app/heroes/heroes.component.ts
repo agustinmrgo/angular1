@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero'; //importo clase Hero !
-import { HEROES } from '../mock-heroes';
+import { HEROES } from '../mock-heroes'; //importo el array de heroes
 
 @Component({
   selector: 'app-heroes', //selector de CSS 
@@ -19,7 +19,7 @@ export class HeroesComponent implements OnInit { //implementa interfaz OnInit (l
   selectedHero : Hero;
   onSelect (hero : Hero): void {
     this.selectedHero = hero;
-  }
+  } //metodo llamado en el html cuando clickeo un hero 
   
   constructor() { }
 
