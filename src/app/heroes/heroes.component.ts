@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Hero } from '../hero'; // importo clase Hero !
-// import { HEROES } from '../mock-heroes'; // importo el array de heroes
+import { Hero } from '../hero'; // importo clase Hero
 import { HeroService } from '../hero.service'; // servicio que actua como proveedor de datos
 
 @Component({
@@ -11,10 +10,6 @@ import { HeroService } from '../hero.service'; // servicio que actua como provee
 // implementa interfaz OnInit (lifecycle hook es ngOnInit):
 export class HeroesComponent implements OnInit {
 
-  /* hero: Hero = {
-    id: 1,
-    name: 'Windstorm'
-  }; */
   selectedHero: Hero;
   heroes: Hero[];
 
